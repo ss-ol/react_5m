@@ -1,0 +1,40 @@
+.App {
+  background-color:  #ffff8d;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px; /* Расстояние между карточками */
+  width: 40%;
+  padding: 20px; /* Добавлен отступ для лучшего отображения */
+  box-sizing: border-box; /* Учет отступов в ширине */
+
+}
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Скругление углов */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid; /* Используем grid для расположения изображения и текста */
+  grid-template-columns: 1fr 2fr; /* Одна колонка для изображения, две для текста */
+  grid-gap: 10px; /* Расстояние между изображением и текстом */
+  padding: 10px;
+  box-sizing: border-box;
+  background-color:  #a7d8e8;
+
+}
+
+.pokemon-card img {
+  width: 100%;
+  height: auto;
+  grid-row: 1 / span 2; /* Занимаем две строки, чтобы изображение было больше */
+  object-fit: cover; /* Масштабируем изображение, чтобы оно заполняло весь контейнер */
+}
+
+.pokemon-card h3 {
+  margin-top: 0; /* Удаляем верхний отступ заголовка */
+}
+h1{
+  text-align: center;
+}
